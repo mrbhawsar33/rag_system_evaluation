@@ -1,5 +1,43 @@
-# Python
+# Environment variables
 .env
 
-# Virtual Environments
+# Virtual environments
 venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# HuggingFace / model caches
+.cache/
+huggingface/
+
+# Logs
+logs/
+*.log
+
+# Large generated artifacts
+data/processed/embeddings.npy
+data/processed/faiss.index
+
+# Streamlit cache (if used later)
+.streamlit/
+
+# IDE files
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
