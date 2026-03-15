@@ -1,16 +1,21 @@
 
-from dotenv import load_dotenv
 import os
 import json
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-load_dotenv()
+import src.config.env
 
 class FAISSRetriever:
 
-    def __init__(self, json_path, model_name="all-MiniLM-L6-v2"):
+    def __init__(
+        self,
+        json_path,
+        embedding_path="data/processed/embeddings.npy",
+        index_path="data/processed/faiss.index",
+        model_name="all-MiniLM-L6-v2"
+    ):
 
         with open(json_path, "r", encoding="utf-8") as f:
             self.docs = json.load(f)
@@ -20,16 +25,48 @@ class FAISSRetriever:
         # embedding model
         self.model = SentenceTransformer(model_name)
 
-        # create embeddings
-        embeddings = self.model.encode(self.texts, show_progress_bar=True)
+        # ---------- Load cached embeddings ----------
+        if os.path.exists(embedding_path):
 
-        self.embeddings = np.array(embeddings).astype("float32")
+            print("Loading cached embeddings...")
 
-        # create FAISS index
-        dim = self.embeddings.shape[1]
-        self.index = faiss.IndexFlatL2(dim)
+            self.embeddings = np.load(embedding_path)
 
-        self.index.add(self.embeddings)
+        else:
+
+            print("Computing embeddings...")
+
+            embeddings = self.model.encode(
+                self.texts,
+                show_progress_bar=True
+            )
+
+            self.embeddings = np.array(embeddings).astype("float32")
+
+            np.save(embedding_path, self.embeddings)
+
+            print("Embeddings saved.")
+
+        # ---------- Load FAISS index ----------
+        if os.path.exists(index_path):
+
+            print("Loading FAISS index...")
+
+            self.index = faiss.read_index(index_path)
+
+        else:
+
+            print("Building FAISS index...")
+
+            dim = self.embeddings.shape[1]
+
+            self.index = faiss.IndexFlatL2(dim)
+
+            self.index.add(self.embeddings)
+
+            faiss.write_index(self.index, index_path)
+
+            print("FAISS index saved.")
 
     def search(self, query, top_k=5):
 

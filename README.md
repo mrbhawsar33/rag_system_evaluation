@@ -7,12 +7,18 @@ project_root
 │   ├── raw
 │   └── processed
 │
-├── src
-│   ├── __init__.py
-│   ├── data
-│   │   └── __init__.py
-│   └── retrieval
-│       └── __init__.py
+src/
+
+config/
+   env.py
+
+retrieval/
+   bm25_retriever.py
+   faiss_retriever.py
+   hybrid_retriever.py
+
+reranking/
+   cross_encoder_reranker.py
 │
 ├── test
 │   ├── __init__.py
