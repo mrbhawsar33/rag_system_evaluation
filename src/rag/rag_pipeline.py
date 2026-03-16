@@ -12,6 +12,7 @@ class RAGPipeline:
         json_path: str,
         retriever_type: str = "hybrid",
         llm_model="mistral",
+        prompt_template=None,
         retrieval_top_k: int = 10,
         final_top_k: int = 3,
     ):
@@ -21,7 +22,7 @@ class RAGPipeline:
         self.final_top_k = final_top_k
         self.llm = OllamaClient(
             model_name=llm_model,
-            prompt_template=PROMPT_V2
+            prompt_template=prompt_template
         )
 
         if self.retriever_type == "bm25":
