@@ -64,11 +64,14 @@ class RAGPipeline:
 
         answer = self.llm.generate(query, context)
 
+        retrieved_doc_ids = [doc["doc_id"] for doc, _ in reranked_docs]
+
         return {
             "query": query,
             "retriever_type": self.retriever_type,
             "context": context,
             "answer": answer.answer,
             "citations": answer.citations,
+            "retrieved_docs": retrieved_doc_ids,
             "reranked_docs": reranked_docs
         }

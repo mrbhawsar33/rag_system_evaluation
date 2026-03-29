@@ -51,6 +51,9 @@ class ExperimentRunner:
                         start = time.time()
 
                         output = pipeline.run(question)
+                        
+                        # Add retrieved docs to output for analysis
+                        retrieved_docs = output.get("retrieved_docs", [])
 
                         latency = time.time() - start
 
@@ -58,10 +61,13 @@ class ExperimentRunner:
                             "question_id": qid,
                             "question": question,
                             "ground_truth": ground_truth,
+                            "reference_doc_id": item.get("reference_doc_id"),
                             "retriever": retriever,
                             "llm": llm,
+                            "prompt": prompt_name,
                             "answer": output["answer"],
                             "citations": output["citations"],
+                            "retrieved_docs": retrieved_docs,
                             "latency": latency
                         })
 

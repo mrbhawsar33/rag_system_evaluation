@@ -1,0 +1,331 @@
+[
+  {
+    "id": 23697,
+    "question": "Which vehicle produces 102 horsepower?",
+    "ground_truth": "The 1995 Honda Civic del Sol",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 12,
+    "question": "What is the MSRP of The 2012 BMW 1 Series with 230 horsepower?",
+    "ground_truth": "$31,200",
+    "type": "fact",
+    "reference_doc_id": "the_2012_bmw_1_series_00005"
+  },
+  {
+    "id": 23705,
+    "question": "Which vehicle produces 592 horsepower?",
+    "ground_truth": "The 2012 McLaren MP4-12C",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 23712,
+    "question": "Which vehicle has 95 horsepower and costs $2,000?",
+    "ground_truth": "The 1998 Suzuki Sidekick",
+    "type": "filter",
+    "reference_doc_id": "the_1998_suzuki_sidekick_09197"
+  },
+  {
+    "id": 23715,
+    "question": "Which vehicle has 292 horsepower and costs $48,400?",
+    "ground_truth": "The 2017 Audi S3",
+    "type": "filter",
+    "reference_doc_id": "the_2017_audi_s3_08853"
+  },
+  {
+    "id": 3,
+    "question": "What is the horsepower of The 2011 BMW 1 Series?",
+    "ground_truth": "300 horsepower",
+    "type": "fact",
+    "reference_doc_id": "the_2011_bmw_1_series_00001"
+  },
+  {
+    "id": 1,
+    "question": "What is the horsepower of The 2011 BMW 1 Series M?",
+    "ground_truth": "335 horsepower",
+    "type": "fact",
+    "reference_doc_id": "the_2011_bmw_1_series_m_00000"
+  },
+  {
+    "id": 23734,
+    "question": "What is the top speed of the 2017 Nissan Versa?",
+    "ground_truth": "NOT_FOUND",
+    "type": "hallucination",
+    "reference_doc_id": "the_2017_buick_encore_03957"
+  },
+  {
+    "id": 4,
+    "question": "What is the MSRP of The 2011 BMW 1 Series with 300 horsepower?",
+    "ground_truth": "$40,650",
+    "type": "fact",
+    "reference_doc_id": "the_2011_bmw_1_series_00001"
+  },
+  {
+    "id": 23696,
+    "question": "Which vehicle produces 553 horsepower?",
+    "ground_truth": "The 2015 Ferrari California T",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 2,
+    "question": "What is the MSRP of The 2011 BMW 1 Series M with 335 horsepower?",
+    "ground_truth": "$46,135",
+    "type": "fact",
+    "reference_doc_id": "the_2011_bmw_1_series_m_00000"
+  },
+  {
+    "id": 23723,
+    "question": "Which vehicle has 297 horsepower and costs $36,850?",
+    "ground_truth": "The 2008 Infiniti EX35",
+    "type": "filter",
+    "reference_doc_id": "the_2008_infiniti_ex35_04270"
+  },
+  {
+    "id": 7,
+    "question": "What is the horsepower of The 2011 BMW 1 Series?",
+    "ground_truth": "230 horsepower",
+    "type": "fact",
+    "reference_doc_id": "the_2011_bmw_1_series_00003"
+  },
+  {
+    "id": 23719,
+    "question": "Which vehicle has 236 horsepower and costs $5,576?",
+    "ground_truth": "The 1995 Porsche 968",
+    "type": "filter",
+    "reference_doc_id": "the_1995_porsche_968_01013"
+  },
+  {
+    "id": 23698,
+    "question": "Which vehicle produces 572 horsepower?",
+    "ground_truth": "The 2015 Bentley Continental GT3-R",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 8,
+    "question": "What is the MSRP of The 2011 BMW 1 Series with 230 horsepower?",
+    "ground_truth": "$29,450",
+    "type": "fact",
+    "reference_doc_id": "the_2011_bmw_1_series_00003"
+  },
+  {
+    "id": 23732,
+    "question": "What is the battery capacity of the 2014 Kia Soul?",
+    "ground_truth": "NOT_FOUND",
+    "type": "hallucination",
+    "reference_doc_id": "the_2017_buick_encore_03957"
+  },
+  {
+    "id": 23691,
+    "question": "Which vehicle produces 661 horsepower?",
+    "ground_truth": "The 2011 Ferrari 599",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 11,
+    "question": "What is the horsepower of The 2012 BMW 1 Series?",
+    "ground_truth": "230 horsepower",
+    "type": "fact",
+    "reference_doc_id": "the_2012_bmw_1_series_00005"
+  },
+  {
+    "id": 23726,
+    "question": "Which vehicle has 240 horsepower and costs $41,750?",
+    "ground_truth": "The 2016 Volvo V60",
+    "type": "filter",
+    "reference_doc_id": "the_2016_volvo_v60_11133"
+  },
+  {
+    "id": 23703,
+    "question": "Which vehicle produces 493 horsepower?",
+    "ground_truth": "The 2016 BMW M4 GTS",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 23720,
+    "question": "Which vehicle has 632 horsepower and costs $378,200?",
+    "ground_truth": "The 2008 Lamborghini Murcielago",
+    "type": "filter",
+    "reference_doc_id": "the_2008_lamborghini_murcielago_07058"
+  },
+  {
+    "id": 23701,
+    "question": "Which vehicle produces 361 horsepower?",
+    "ground_truth": "The 2008 Pontiac G8",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 23700,
+    "question": "Which vehicle produces 123 horsepower?",
+    "ground_truth": "The 2017 Ford Focus",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 23736,
+    "question": "What is the engine torque of the 2015 Kia Soul?",
+    "ground_truth": "NOT_FOUND",
+    "type": "hallucination",
+    "reference_doc_id": "the_2017_buick_encore_03957"
+  },
+  {
+    "id": 23704,
+    "question": "Which vehicle produces 151 horsepower?",
+    "ground_truth": "The 1994 Mitsubishi Mighty Max Pickup",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 14,
+    "question": "What is the MSRP of The 2012 BMW 1 Series with 300 horsepower?",
+    "ground_truth": "$44,100",
+    "type": "fact",
+    "reference_doc_id": "the_2012_bmw_1_series_00006"
+  },
+  {
+    "id": 6,
+    "question": "What is the MSRP of The 2011 BMW 1 Series with 300 horsepower?",
+    "ground_truth": "$36,350",
+    "type": "fact",
+    "reference_doc_id": "the_2011_bmw_1_series_00002"
+  },
+  {
+    "id": 23699,
+    "question": "Which vehicle produces 660 horsepower?",
+    "ground_truth": "The 2003 Ferrari Enzo",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 23692,
+    "question": "Which vehicle produces 535 horsepower?",
+    "ground_truth": "The 2015 BMW 7 Series",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 23702,
+    "question": "Which vehicle produces 424 horsepower?",
+    "ground_truth": "The 2017 Maserati Levante",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 23717,
+    "question": "Which vehicle has 210 horsepower and costs $23,590?",
+    "ground_truth": "The 2008 Mitsubishi Raider",
+    "type": "filter",
+    "reference_doc_id": "the_2008_mitsubishi_raider_08025"
+  },
+  {
+    "id": 13,
+    "question": "What is the horsepower of The 2012 BMW 1 Series?",
+    "ground_truth": "300 horsepower",
+    "type": "fact",
+    "reference_doc_id": "the_2012_bmw_1_series_00006"
+  },
+  {
+    "id": 23693,
+    "question": "Which vehicle produces 372 horsepower?",
+    "ground_truth": "The 1995 BMW 8 Series",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 23735,
+    "question": "Which car has autonomous driving capability?",
+    "ground_truth": "NOT_FOUND",
+    "type": "hallucination",
+    "reference_doc_id": "the_2017_buick_encore_03957"
+  },
+  {
+    "id": 23724,
+    "question": "Which vehicle has 420 horsepower and costs $91,950?",
+    "ground_truth": "The 2016 Cadillac Escalade",
+    "type": "filter",
+    "reference_doc_id": "the_2016_cadillac_escalade_04168"
+  },
+  {
+    "id": 23721,
+    "question": "Which vehicle has 203 horsepower and costs $21,035?",
+    "ground_truth": "The 2001 Ford Explorer Sport",
+    "type": "filter",
+    "reference_doc_id": "the_2001_ford_explorer_sport_04374"
+  },
+  {
+    "id": 23694,
+    "question": "Which vehicle produces 456 horsepower?",
+    "ground_truth": "The 2017 Mercedes-Benz AMG GT",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  },
+  {
+    "id": 23725,
+    "question": "Which vehicle has 166 horsepower and costs $24,185?",
+    "ground_truth": "The 2011 Honda Element",
+    "type": "filter",
+    "reference_doc_id": "the_2011_honda_element_03908"
+  },
+  {
+    "id": 23722,
+    "question": "Which vehicle has 300 horsepower and costs $35,595?",
+    "ground_truth": "The 2016 Chrysler 300",
+    "type": "filter",
+    "reference_doc_id": "the_2016_chrysler_300_00212"
+  },
+  {
+    "id": 23716,
+    "question": "Which vehicle has 250 horsepower and costs $34,295?",
+    "ground_truth": "The 2017 Subaru Forester",
+    "type": "filter",
+    "reference_doc_id": "the_2017_subaru_forester_04850"
+  },
+  {
+    "id": 23733,
+    "question": "Which vehicle in the dataset is electric?",
+    "ground_truth": "NOT_FOUND",
+    "type": "hallucination",
+    "reference_doc_id": "the_2017_buick_encore_03957"
+  },
+  {
+    "id": 23714,
+    "question": "Which vehicle has 200 horsepower and costs $29,895?",
+    "ground_truth": "The 2013 Volkswagen GTI",
+    "type": "filter",
+    "reference_doc_id": "the_2013_volkswagen_gti_05674"
+  },
+  {
+    "id": 23718,
+    "question": "Which vehicle has 318 horsepower and costs $46,090?",
+    "ground_truth": "The 2013 Cadillac CTS Wagon",
+    "type": "filter",
+    "reference_doc_id": "the_2013_cadillac_cts_wagon_03233"
+  },
+  {
+    "id": 23713,
+    "question": "Which vehicle has 158 horsepower and costs $19,850?",
+    "ground_truth": "The 2016 Honda Civic",
+    "type": "filter",
+    "reference_doc_id": "the_2016_honda_civic_02585"
+  },
+  {
+    "id": 10,
+    "question": "What is the MSRP of The 2011 BMW 1 Series with 230 horsepower?",
+    "ground_truth": "$34,500",
+    "type": "fact",
+    "reference_doc_id": "the_2011_bmw_1_series_00004"
+  },
+  {
+    "id": 23695,
+    "question": "Which vehicle produces 451 horsepower?",
+    "ground_truth": "The 2015 Mercedes-Benz C-Class",
+    "type": "reverse",
+    "reference_doc_id": "the_2006_lincoln_zephyr_11913"
+  }
+]
