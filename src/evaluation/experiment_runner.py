@@ -23,13 +23,13 @@ class ExperimentRunner:
             "v2": PROMPT_V2
         }
 
-    def compute_recall_at_k(retrieved_docs, reference_doc_id):
+    def compute_recall_at_k(self,retrieved_docs, reference_doc_id):
         if not reference_doc_id:
             return None
         return int(reference_doc_id in retrieved_docs)
 
 
-    def compute_mrr(retrieved_docs, reference_doc_id):
+    def compute_mrr(self,retrieved_docs, reference_doc_id):
         if not reference_doc_id:
             return None
         for rank, doc_id in enumerate(retrieved_docs, start=1):
@@ -38,7 +38,7 @@ class ExperimentRunner:
         return 0
 
 
-    def compute_hallucination(answer, ground_truth):
+    def compute_hallucination(self, answer, ground_truth):
         if ground_truth == "NOT_FOUND":
             # correct behavior → model should say NOT_FOUND / no info
             return int("not" not in answer.lower())
@@ -74,6 +74,7 @@ class ExperimentRunner:
 
                         output = pipeline.run(question)
                         
+                        context = output.get("context", "")
                         # Add retrieved docs to output for analysis
                         retrieved_docs = output.get("retrieved_docs", [])
 
@@ -94,6 +95,7 @@ class ExperimentRunner:
                             "answer": output["answer"],
                             "citations": output["citations"],
                             "retrieved_docs": retrieved_docs,
+                            "context": context,
                             "latency": latency,
                             "recall_at_k": recall,
                             "mrr": mrr,
